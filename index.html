@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pedido de Medicamentos</title>
+</head>
+<body>
+  <h1>Pedido de Medicamentos</h1>
+  <form id="pedidoForm">
+    <h2>Medicamentos Disponíveis:</h2>
+    <ul>
+      <li><label><input type="checkbox" name="medicamento" value="Aspirina"> Aspirina - R$5.00</label></li>
+      <li><label><input type="checkbox" name="medicamento" value="Antibiotico"> Antibiótico - R$10.00</label></li>
+      <li><label><input type="checkbox" name="medicamento" value="Analgesico"> Analgésico - R$8.00</label></li>
+      <li><label><input type="checkbox" name="medicamento" value="Vitaminas"> Vitaminas - R$12.00</label></li>
+    </ul>
+
+    <h2>Métodos de Entrega:</h2>
+    <select name="metodoEntrega">
+      <option value="Entrega Padrão">Entrega Padrão - R$0.00</option>
+      <option value="Entrega Expressa">Entrega Expressa - R$10.00</option>
+      <option value="Retirada na Loja">Retirada na Loja - R$0.00</option>
+    </select>
+
+    <br><br>
+    <button type="button" onclick="calcularCusto()">Calcular Custo Total</button>
+  </form>
+
+  <h2>Resultado:</h2>
+  <p id="resultado"></p>
+
+  <script>
+    function calcularCusto() {
+      const form = document.getElementById("pedidoForm");
+      const selectedMedicamentos = Array.from(form.querySelectorAll('input[name="medicamento"]:checked')).map(input => input.value);
+      const metodoEntrega = form.querySelector('select[name="metodoEntrega"]').value;
+
+      let custoMedicamentos = 0;
+      for (const medicamento of selectedMedicamentos) {
+        switch (medicamento) {
+          case "Aspirina":
+            custoMedicamentos += 5.0;
+            break;
+          case "Antibiotico":
+            custoMedicamentos += 10.0;
+            break;
+          case "Analgesico":
+            custoMedicamentos += 8.0;
+            break;
+          case "Vitaminas":
+            custoMedicamentos += 12.0;
+            break;
+        }
+      }
+
+      let custoEntrega = 0;
+      switch (metodoEntrega) {
+        case "Entrega Padrão":
+          custoEntrega = 0.0;
+          break;
+        case "Entrega Expressa":
+          custoEntrega = 10.0;
+          break;
+        case "Retirada na Loja":
+          custoEntrega = 0.0;
+          break;
+      }
+
+      const custoTotal = custoMedicamentos + custoEntrega;
+      const resultadoElement = document.getElementById("resultado");
+      resultadoElement.textContent = `O custo total do pedido é de R$${custoTotal.toFixed(2)}`;
+
+      // Limpar as seleções do formulário após o cálculo
+      form.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Desafio Dev Ignite Globalsys
 
-## Desafio para o Aluno 1 - Estilização da Página
+## Desafio para Enzo - Estilização da Página
 
 **Objetivo:** Estilizar a página usando Bootstrap ou outro framework de sua escolha para melhorar a aparência e usabilidade.
 
@@ -16,7 +16,7 @@
 
 5. **Compartilhe sua versão:** Após a estilização, compartilhe o código HTML e CSS estilizado.
 
-### Desafio para o Aluno 2 - Modificação dos Produtos e Cálculos
+## Desafio para Géssica - Modificação dos Produtos e Cálculos
 
 **Objetivo:** Modificar os tipos de produtos disponíveis e ajustar os valores, taxas de entrega e quaisquer outros cálculos relacionados.
 
@@ -30,4 +30,3 @@
 
 4. **Compartilhe sua versão:** Após fazer as modificações, compartilhe o código HTML e JavaScript atualizado que representa o novo cenário de produtos e cálculos.
 
-Encoraje seus alunos a serem criativos e a explorarem as possibilidades de estilização e customização dos produtos. Esses desafios ajudarão a reforçar os conceitos de HTML, CSS, JavaScript e lógica de programação.

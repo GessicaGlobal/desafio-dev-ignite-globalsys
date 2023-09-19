@@ -27,6 +27,7 @@
 **Resposta - Modificaçoes realizadas:** Os produtos escolhidos enquadram-se na categoria de moda masculina, incluindo camisa polo manga curta e manga longa, camisa básica, camisa social manga curta e longa, calça jeans, calça em sarja brim, bermuda brim, jaqueta jeans e casaco de la.
 
 2. **Valores e Taxas:** Defina preços diferentes para os novos produtos e ajuste as taxas de entrega se necessário. Certifique-se de atualizar os valores nas funções JavaScript para calcular o custo total com base nos novos produtos e taxas de entrega.
+   
 **Resposta - Modificaçoes realizadas:** 
 Os preços ficaram da seguinte forma:
 
@@ -45,7 +46,8 @@ Entrega Expressa - R$15.00
 Retirada na Loja - R$0.00
 
 3. **Moeda Local:** Se você não está usando o Real brasileiro (R$), atualize a moeda e símbolos para refletir a moeda local usada em seu novo cenário. Por exemplo, use dólares (USD), euros (EUR) ou qualquer outra moeda.
+   
 **Resposta - Modificaçoes realizadas:** Foram adicionadas options para selecao da moeda local, inputs para selecao dos produtos e uma funçao que as atualiza o conteudo (produto, simbolo, entrega, valores) conforme o que esta contido em uma lista (podendo migrar posteriormente para uma API).
 
-4. **Compartilhe sua versão:** Após fazer as modificações, compartilhe o código HTML e JavaScript atualizado que representa o novo cenário de produtos e cálculos.
+5. **Compartilhe sua versão:** Após fazer as modificações, compartilhe o código HTML e JavaScript atualizado que representa o novo cenário de produtos e cálculos.
 

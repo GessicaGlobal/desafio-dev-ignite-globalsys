@@ -30,3 +30,4 @@
 
 4. **Compartilhe sua versão:** Após fazer as modificações, compartilhe o código HTML e JavaScript atualizado que representa o novo cenário de produtos e cálculos.
 
+teste
